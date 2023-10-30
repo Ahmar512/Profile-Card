@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Pacifico&family=Playpen+Sans:wght@200&family=Poppins:wght@300;400;500;600&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f4f4;
+}
+.profile-card{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 370px;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 24px;
+    padding: 25px;
+    position: relative;
+}
+.profile-card::before{
+    content: "";
+    background-color: #4070f4;
+    height: 150px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left:0;
+    border-radius: 24px 24px 0px 0px;
+}
+.image{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: #4070f4;
+    padding: 3px;
+    margin-bottom: 10px;
+
+}
+.image .profile-img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #fff;
+}
+.profile-card .data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.data .name{
+    font-size: 24px;
+    font-weight: 400;
+}
+.data .job{
+    font-size: 15px;
+    font-weight: 300;
+}
+.profile-card .media-buttons{
+    display: flex;
+
+}
+.media-buttons .github{
+    display: flex;
+    color: #fff;
+    background:#171515 ;
+    font-size: 18px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    margin: 15px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.media-buttons .insta{
+    display: flex;
+    color: #fff;
+    background: #e1306c;
+    font-size: 18px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    margin: 15px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+.media-buttons .twitter{
+    display: flex;
+    color: #fff;
+    background: #1da1f2;
+    font-size: 18px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    margin: 15px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.media-buttons .linked{
+    display: flex;
+    color: #fff;
+    background: #0072b1;
+    font-size: 18px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    margin: 15px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.profile-card .buttons{
+    display: flex;
+    gap: 30px;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.buttons .button{
+    border: none;
+    color: #fff;
+    border-radius: 35px;
+    padding: 8px 20px;
+    background-color: #4070f4;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.buttons .button:hover{
+    background-color: #0e4bf1;
+}
+.media-buttons .github:hover{
+    background:#fff;
+    color:#171515;
+}
+.media-buttons .insta:hover{
+    background:#fff;
+    color:#e1306c;
+}
+.media-buttons .twitter:hover{
+    background:#fff;
+    color:#1da1f2;
+}
+.media-buttons .linked:hover{
+    background:#fff;
+    color:#0072b1;
+}
+
